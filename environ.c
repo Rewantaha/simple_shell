@@ -21,12 +21,12 @@ int my_env(my_info_t *info)
  */
 char *my_getenv(my_info_t *info, const char *name)
 {
-	my_list_t *node = info->my_env;
+	list_t *node = info->my_env;
 	char *p;
 
 	while (node)
 	{
-		p = starts_with(node->str, name);
+		p = my_starts_with(node->str, name);
 		if (p && *p)
 			return (p);
 		node = node->next;
