@@ -1,15 +1,28 @@
 Simple_Shell
 
 
-A simple UNIX command line interpreter written in C.
+# Simple Shell 🐚
 
+A custom UNIX command line interpreter written in C.
 
-- Execute commands
-- Handle built-in commands
-- Environment variables support
+ط
+This project is a simple implementation of a UNIX shell that can execute commands, handle built-ins, and manage environment variables.
+
+---
+
+## ⚙️ Features
+- Execute external commands
+- Built-in commands (cd, exit, env)
 - Command parsing
+- Environment variables handling
 
+---
 
+## 🧪 Example
 
 ```bash
-gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
+$ ls
+file1.c file2.c
+
+$ echo Hello
+Hello
